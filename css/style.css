@@ -2,101 +2,91 @@
     margin: 0;
     padding: 0;
 }
-
+html {
+    font-size: 0.8px;
+}
 body {
     font-family: 'Arial';
     background-color: #8dc63f;
     margin:0;
 }
-
 .wrapper {
     background-color: #fff;
     margin: 0 auto;
     max-width:960px;
     padding: 0 15px;
 }
-
 .flex-between {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
 .header {
     padding: 25px 0; 
 }
-
 .logo {
     column-gap: 34px;
+    text-align: center;
 }
-
 .logo p,
 .contacts a {
     font-size: 22px;
     color: #39930d;
 }
-
 .logo p {
     margin: 0;
     padding-left: 15px; 
 }
-
 .logo b {
     display: block;
     font-size: 44px;
     color: #39930d;
 }
-
 .logo i {
     font-size: 14px;
     color: #5a5a5a;
 }
-
 .logo i,
 .contacts i {
     font-size: 14px;
     color: #5a5a5a;
 }
-
 .contacts p {
-    text-align: right;
+    text-align: center;
 }
-
 .main {
-    padding: 25px 0 29px;;
+    padding: 25px 0 29px;
+    flex-wrap: wrap-reverse;
 }
-
 .main-img {
     width: 100%;
+    min-height: 200px;
+    object-fit: cover;
+    object-position: 75%;
+    vertical-align: bottom;
 }
-
 .main-text {
-    max-width: 594px;
+    max-width: 594rem;
 }
-
 .main-text h1,
 .main-text p {
     margin-bottom: 17px;
 }
-
 .main-text h1 {
     font-size: 24px;
     color: #39930d;
 }
-
 .main-text p {
     font-size: 14px;
     line-height: 1.5em;
     color: #343434;
 }
-
 .hover {
     transition: 1s ease;
 }
-
 .hover:hover {
     color: #5a5a5a;
 }
-
 .menu p {
     width: 300px;
     padding: 11px 20px;
@@ -104,22 +94,50 @@ body {
     font-size: 18px;
     color: #fff;
 }
-
 .menu ul {
     padding: 20px;
     list-style: none;
 }
-
 .menu a {
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
     color: #39930d;
 }
-
 .footer {
     background-color: #39930d;
     color:#fff;
     margin: 0 -15px;
     padding: 13px;
+}
+@media screen and (min-width: 520px) {
+    .flex-between {
+        justify-content: space-between;
+    }
+    .main {
+        flex-wrap: nowrap;
+    }
+}
+@media screen and (min-width: 621px) {
+    .contacts p {
+        text-align: right;
+    }
+    .logo {
+        text-align: left;
+    }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 1px;
+  }
+}
+@media screen and (min-width: 1440px) {
+    html {
+      font-size: 1.2px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    html {
+      font-size: 2px;
+    }
 }
