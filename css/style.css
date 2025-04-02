@@ -136,7 +136,7 @@ body {
         padding: 12px 0;
     }
 }
-@media screen and (min-width: 621px) {
+@media screen and (min-width: 504px) {
     .contacts p {
         text-align: right;
     }
