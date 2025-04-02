@@ -28,6 +28,9 @@ body {
     column-gap: 34rem;
     text-align: center;
 }
+.logo img {
+    min-width: 100rem;
+}
 .logo p,
 .contacts a {
     font-size: 22rem;
@@ -88,7 +91,6 @@ body {
     color: #5a5a5a;
 }
 .menu p {
-    width: 300rem;
     padding: 11rem 20rem;
     background-color: #39930d;
     font-size: 18rem;
@@ -126,6 +128,11 @@ body {
     }
     html {
         font-size: 0.8px;
+    }
+}
+@media screen and (max-width: 343px) {
+    .logo img {
+        padding: 12px 0;
     }
 }
 @media screen and (min-width: 621px) {
